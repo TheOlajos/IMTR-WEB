@@ -1,0 +1,60 @@
+.light-button,
+.dark-button {
+  border: 0;
+  padding: 5px;
+  background: #000000;
+  border-radius: 5px;
+  transition: background 200ms ease;
+  color: #ffffff;
+  height: 40px;width: 40px;
+}
+
+.light-button{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+.dark-button i {
+  transform: rotate(35deg);
+  margin-left: 0.3rem;
+}
+
+
+.light-dark-mode-wrapper{text-align: center;margin-bottom: -40px;margin-top: 20px;
+
+}
+
+body.dark {
+  --bg-white-transparent: rgba(0, 0, 0, 0.91);
+  --bg-white-transparent: rgba(0, 0, 0, 1);
+  --bg-light-transparent: rgba(24, 24, 24, 0.91);
+  --text-white: #000000;
+  --text-gray: #355335;
+  --bg-white: #000000;
+  --bg-shape: #2c3534;
+  --bg-theme: #152515;
+  --text-black: #ffffff;  
+  --bg-black: #ffffff;
+}
+
+body.dark {
+  color: var(--text-black);
+}
+
+body.dark .video-banner-text-inner {
+  
+  mix-blend-mode: multiply;
+}
+body.dark .hero-btns {
+  mix-blend-mode: luminosity;
+  background-color: white;
+}
+body.dark .hero-btns .btn-light{background: #000;color: #fff;}
+body.dark .breadcrumbs-wrapper{
+  
+}
+
+body.dark .external-footer{background-color: #000000 !important;}
+.breadcrumbs-wrapper .breadcrumb-item.active,
+.breadcrumbs-wrapper{color: var(--text-black);}
